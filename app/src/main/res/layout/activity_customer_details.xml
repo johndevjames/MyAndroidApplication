@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:background="@drawable/white_design_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textSize="14.0sp"
+        android:textStyle="bold"
+        android:id="@+id/textView5"
+        android:paddingTop="5.0dip"
+        android:paddingBottom="5.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customers"
+        android:layout_below="@+id/inputSearch"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true" />
+
+    <ListView
+        android:id="@+id/list_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:dividerHeight="3.0dip" />
+
+    <EditText
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18.0sp"
+        android:id="@+id/inputSearch"
+        android:background="@drawable/search_text_border"
+        android:paddingLeft="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginRight="20.0dip"
+        android:hint="Search customers..."
+        android:layout_below="@+id/toolbar4"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/AppTheme"
+        android:id="@+id/toolbar4"
+        android:background="@color/maroonred"
+        app:titleTextColor="@color/apple_grey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list_main"
+        android:layout_alignEnd="@+id/inputSearch"
+        android:text="TextView"
+        android:layout_below="@+id/inputSearch" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/popup_element"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/white_design_background"
+	android:orientation="vertical"
+	android:padding="10sp">
+
+	<ImageView
+		android:id="@+id/imageView2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		 />
+
+
+</RelativeLayout>

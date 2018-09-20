@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/white_design_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/edit_text_border2"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="TOTAL"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border2"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputSearch"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border2"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Order Name &amp; Details"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/AppTheme"
+        android:id="@+id/toolbar8"
+        android:background="@color/maroonred"
+        app:titleTextColor="@color/apple_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/list_main3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView30"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+
+        android:dividerHeight="1dp" />
+    <EditText
+
+        android:textSize="18sp"
+        android:id="@+id/inputSearch"
+        android:background="@drawable/search_text_border"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="Search Orders Details...."
+        android:layout_below="@+id/toolbar8"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginStart="7dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border2"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="ord no"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/button25"
+        style="@android:style/Widget.Material.Light.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@android:drawable/ic_input_add"
+        android:elevation="24dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp"
+        android:layout_above="@+id/inputSearch"
+        android:layout_toStartOf="@+id/textView38" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView30"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignStart="@+id/list_main3"
+        android:layout_alignEnd="@+id/list_main3" />
+</RelativeLayout>

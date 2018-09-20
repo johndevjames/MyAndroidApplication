@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="match_parent" 
+android:layout_height="match_parent">
+    <EditText 
+	android:id="@+id/spinner3" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="140dp" 
+	android:layout_alignParentTop="true" 
+	android:spinnerMode="dialog" 
+	android:layout_alignParentStart="true" />
+    <EditText 
+	android:id="@+id/spinner" 
+	android:focusableInTouchMode="false" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="68dp" 
+	android:layout_below="@+id/spinner3" 
+	android:spinnerMode="dialog" 
+	android:layout_alignParentStart="true" />
+    <TextView 
+	android:id="@+id/textView14" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginBottom="49dp" 
+	android:text="Start Date" 
+	android:layout_above="@+id/spinner" 
+	android:layout_alignParentStart="true" 
+	android:layout_alignParentEnd="true" />
+    <TextView 
+	android:id="@+id/textView54" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="25dp" 
+	android:text="End Date"
+	android:layout_below="@+id/spinner3" 
+	android:layout_alignParentStart="true" 
+	android:layout_alignParentEnd="true" />
+    <Button 
+	android:id="@+id/button23" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_marginTop="41dp" 
+	android:text="Submit" 
+	android:layout_below="@+id/spinner"
+	android:textAllCaps="false" 
+	android:layout_alignParentStart="true"
+	android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="@drawable/white_design_background"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recycler_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentEnd="true"
+		android:layout_below="@+id/textView5"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="25dp"
+		android:background="@android:color/background_light"
+		android:scrollbars="vertical"
+		android:soundEffectsEnabled="true" />
+    <android.support.v7.widget.Toolbar android:theme="@style/AppTheme"
+	android:id="@+id/toolbar4"
+	android:background="@color/maroonred"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:minHeight="?attr/actionBarSize"
+		app:titleTextColor="@color/apple_grey"
+		android:layout_alignParentTop="true"
+	android:layout_alignParentEnd="true" />
+
+	<TextView
+
+		android:id="@+id/textView5"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/toolbar4"
+		android:layout_marginTop="10dp"
+		android:fontFamily="monospace"
+		android:text="Customer Details"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		android:textColor="@color/apple_black"
+		android:textStyle="bold"
+		android:layout_alignStart="@+id/recycler_view" />
+
+	<Button
+		android:id="@+id/button19"
+		style="@style/Widget.AppCompat.Button.Small"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/ic_menu_edit"
+		android:layout_alignEnd="@+id/recycler_view"
+		android:layout_below="@+id/toolbar4"
+		android:layout_alignBottom="@+id/button20" />
+
+	<Button
+		android:id="@+id/button20"
+		style="@style/Widget.AppCompat.Button.Small"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/ic_menu_delete"
+		android:layout_marginEnd="16dp"
+		android:layout_below="@+id/toolbar4"
+		android:layout_toStartOf="@+id/button19" />
+</RelativeLayout>

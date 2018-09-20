@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/white_design_background"
+	android:orientation="vertical"
+	android:weightSum="1.0">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:minHeight="?attr/actionBarSize"
+		android:theme="@style/AppTheme" />
+
+	<Button
+		android:id="@+id/button14"
+		style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/editText4"
+		android:layout_marginTop="23dp"
+		android:text="@string/create_account" />
+
+	<EditText
+		android:id="@+id/editText2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/toolbar"
+		android:layout_marginTop="77dp"
+		android:hint="@string/user_name" />
+
+	<EditText
+		android:id="@+id/editText4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/editText2"
+		android:layout_marginTop="98dp"
+		android:hint="@string/confirm_password"
+		android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+
+	<EditText
+		android:id="@+id/editText5"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/editText2"
+		android:layout_marginTop="13dp"
+		android:hint="@string/password"
+		android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+
+</RelativeLayout>

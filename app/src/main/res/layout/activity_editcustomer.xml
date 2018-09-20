@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_design_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/maroonred"
+        app:titleTextColor="@color/apple_grey"
+        android:theme="@style/AppTheme" />
+
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:text="Add Customer"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/scrollView3"
+
+        android:layout_below="@+id/toolbar11"
+        android:layout_marginStart="41dp"
+        android:layout_toEndOf="@+id/textView23"
+        android:background="@android:color/holo_red_dark"
+        android:elevation="5dp"
+        android:text="save"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        style="@android:style/Widget.Holo.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView23"
+        android:background="@android:color/background_light"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <RelativeLayout
+
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:background="@android:color/holo_red_dark"
+                    android:paddingLeft="20dp"
+
+                    android:text="Customer"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/l2"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="1.0">
+
+                    <EditText
+                        android:id="@+id/et_customer_shop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="text"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_owner_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="text"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_tin_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="number"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginRight="220dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/customer_shop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Shop name"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_owner_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Owner Name"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_tin_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="GST NO"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout4">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/holo_red_dark"
+
+                    android:paddingLeft="20dp"
+                    android:text="Address"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    android:weightSum="1.0" />
+
+                <LinearLayout
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginRight="220dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/customer_shop_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Shop Place"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_shop_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Shop Address"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_shop_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Shop Area"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="District"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Pin"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_land_mark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Land Mark"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="1.0">
+
+                    <EditText
+                        android:id="@+id/et_customer_shop_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="text"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_shop_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="text"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_shop_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="text"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="text"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_land_mark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="number"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="text"
+
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout5">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/holo_red_dark"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:text="Contact"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <LinearLayout
+                    android:id="@+id/l5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView4"
+                    android:layout_marginRight="220dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/customer_Mobile_numbermb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="@string/mobile_number"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_Phone_numberll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Landline Number"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/customer_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textView4"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="1.0">
+
+                    <EditText
+                        android:id="@+id/et_customer_Mobile_numbermb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="phone"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_Phone_numberll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="phone"
+
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/et_customer_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_border2"
+                        android:inputType="textWebEmailAddress"
+
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

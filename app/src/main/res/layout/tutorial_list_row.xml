@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/relativeLayout1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:id="@+id/textView3"
+					style="style/Widget.Material.TextView.ListSeparator"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@android:color/holo_red_dark"
+					android:paddingLeft="20dp"
+					android:text="Information"
+					android:textColor="@android:color/background_light"
+					android:textSize="18sp"
+					android:typeface="monospace" />
+
+				<LinearLayout
+					android:id="@+id/l1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentStart="true"
+					android:layout_below="@+id/textView3"
+					android:layout_marginRight="220dp"
+					android:orientation="vertical"
+					android:paddingBottom="10dp"
+					android:paddingLeft="10dp"
+					android:paddingTop="20dp">
+
+					<TextView
+						android:id="@+id/textView4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Shop Name"
+						android:textSize="12sp"
+						tools:layout_marginBottom="10dp" />
+
+					<TextView
+						android:id="@+id/textView22"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Owner Name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView65"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Gst No"
+						android:textSize="12sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/l2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:layout_below="@+id/textView3"
+					android:layout_marginLeft="120dp"
+					android:orientation="vertical"
+					android:paddingBottom="10dp"
+					android:paddingRight="10dp"
+					android:paddingTop="20dp">
+
+					<TextView
+						android:id="@+id/textView10"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="shop_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView24"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="owner_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView63"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="gst_name"
+						android:textSize="12sp" />
+				</LinearLayout>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/relativeLayout2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_below="@+id/relativeLayout1">
+
+				<TextView
+					android:id="@+id/textView26"
+					style="style/Widget.Material.TextView.ListSeparator"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.29"
+					android:background="@android:color/holo_red_dark"
+					android:paddingLeft="20dp"
+					android:text="Address Information"
+					android:textColor="@android:color/background_light"
+					android:textSize="18sp"
+					android:typeface="monospace" />
+
+				<LinearLayout
+					android:id="@+id/l3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentStart="true"
+					android:layout_alignStart="@+id/l4"
+					android:layout_below="@+id/textView26"
+					android:layout_marginRight="220dp"
+					android:orientation="vertical"
+					android:paddingBottom="10dp"
+					android:paddingLeft="10dp"
+					android:paddingTop="20dp"
+					android:weightSum="1.0">
+
+					<TextView
+						android:id="@+id/textView43"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Place"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView45"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Address"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView47"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Area"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView66"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Pin No"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView49"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="District"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView57"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Land Mark"
+						android:textSize="12sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/l4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:layout_below="@+id/textView26"
+					android:layout_marginLeft="120dp"
+					android:orientation="vertical"
+					android:paddingBottom="10dp"
+					android:paddingRight="10dp"
+					android:paddingTop="20dp"
+					android:weightSum="1.0">
+
+					<TextView
+						android:id="@+id/textView44"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="place_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView46"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="address_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView48"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="area_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView62"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="pin_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView55"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="district_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView72"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="land_mark_name"
+						android:textSize="12sp" />
+				</LinearLayout>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/relativeLayout3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_below="@+id/relativeLayout2">
+
+				<TextView
+					android:id="@+id/textView56"
+					style="style/Widget.Material.TextView.ListSeparator"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.29"
+
+					android:background="@android:color/holo_red_dark"
+					android:paddingLeft="20dp"
+
+					android:text="Contact Information"
+					android:textColor="@android:color/background_light"
+					android:textSize="18sp"
+					android:typeface="monospace" />
+
+				<LinearLayout
+					android:id="@+id/l5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentStart="true"
+					android:layout_below="@+id/textView56"
+					android:layout_marginRight="220dp"
+					android:orientation="vertical"
+					android:paddingBottom="10dp"
+					android:paddingLeft="10dp"
+					android:paddingTop="20dp"
+					android:weightSum="1.0">
+
+					<TextView
+						android:id="@+id/textView67"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Mobile 1"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView68"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Mobile 2"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView70"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:text="Email"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView69"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:text="Added By"
+						android:textSize="12sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/l6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:layout_below="@+id/textView56"
+					android:layout_marginLeft="120dp"
+					android:orientation="vertical"
+					android:paddingBottom="10dp"
+					android:paddingRight="10dp"
+					android:paddingTop="20dp"
+					android:weightSum="1.0">
+
+					<TextView
+						android:id="@+id/textView58"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:autoLink="phone|all"
+						android:text="Mobile1_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView59"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:autoLink="phone|all"
+						android:text="Mobile2_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView61"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:autoLink="email|all"
+						android:text="email_name"
+						android:textSize="12sp" />
+
+					<TextView
+						android:id="@+id/textView60"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:background="@drawable/edit_text_border2"
+						android:text="added_by_name"
+						android:textSize="12sp" />
+				</LinearLayout>
+			</RelativeLayout>
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>
