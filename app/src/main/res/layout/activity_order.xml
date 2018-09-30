@@ -23,13 +23,13 @@
         android:id="@+id/list_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView25"
+        android:layout_above="@+id/narration"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:dividerHeight="3dp" />
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp" />
 
     <ListView
         android:id="@+id/list_main2"
@@ -39,10 +39,10 @@
         android:layout_above="@+id/narration"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:dividerHeight="3dp" />
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp" />
 
     <EditText
 
@@ -130,7 +130,7 @@
         android:textSize="10sp"
         android:textStyle="bold"
         android:layout_above="@+id/inputSearch"
-        android:layout_alignStart="@+id/button22" />
+        android:layout_toEndOf="@+id/inputSearch" />
 
     <Button
         android:id="@+id/button22"

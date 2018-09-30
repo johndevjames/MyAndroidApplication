@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:649474469508:android:4403586c443e8068",
         "android_client_info": {
-          "package_name": "com.johndevjames.myandroidapplication"
+          "package_name": "com.johndevjames.myandroid"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "649474469508-825754dndke07ftmsam4o8e5163a69ev.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.johndevjames.myandroidapplication",
+            "package_name": "com.johndevjames.myandroid",
             "certificate_hash": "7d79e08eed27fadc1185c92f0c71ef34ff0c1536"
           }
         },

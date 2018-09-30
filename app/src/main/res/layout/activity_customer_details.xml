@@ -29,23 +29,24 @@
         android:layout_marginBottom="10.0dip"
         android:layout_marginLeft="10.0dip"
         android:layout_marginRight="10.0dip"
-        android:dividerHeight="3.0dip" />
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp" />
 
     <EditText
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="18.0sp"
         android:id="@+id/inputSearch"
-        android:background="@drawable/search_text_border"
-        android:paddingLeft="10.0dip"
         android:layout_width="fill_parent"
-        android:layout_height="35.0dip"
-        android:layout_marginLeft="20.0dip"
-        android:layout_marginTop="15.0dip"
-        android:layout_marginRight="20.0dip"
-        android:hint="Search customers..."
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/toolbar4"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/search_text_border"
         android:fontFamily="sans-serif-condensed"
-        android:layout_alignParentStart="true" />
+        android:hint="Search customers..."
+        android:paddingLeft="10.0dip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18.0sp" />
 
     <android.support.v7.widget.Toolbar
         android:theme="@style/AppTheme"
@@ -64,7 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/list_main"
         android:layout_alignEnd="@+id/inputSearch"
+        android:layout_below="@+id/inputSearch"
         android:text="TextView"
-        android:layout_below="@+id/inputSearch" />
+        android:textAlignment="center" />
 
 </RelativeLayout>

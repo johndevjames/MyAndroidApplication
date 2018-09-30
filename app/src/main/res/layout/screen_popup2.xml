@@ -11,18 +11,19 @@
 		android:id="@+id/scrollView2"
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
-		android:layout_above="@+id/btn_close_popup2">
+		android:layout_above="@+id/btn_close_popup2"
+		android:fitsSystemWindows="true">
 
 		<RelativeLayout
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content">
+			android:layout_height="wrap_content"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp">
 
 			<TextView
 				android:id="@+id/textView28"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_alignEnd="@+id/textView35"
-				android:layout_alignParentEnd="true"
 				android:layout_alignStart="@+id/textView35"
 				android:layout_below="@+id/textView35"
 				android:layout_marginTop="20dp"
@@ -30,27 +31,28 @@
 				android:text="order_no"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="20sp"
+				android:layout_alignParentEnd="true" />
 
 			<TextView
 				android:id="@+id/textView35"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_alignParentEnd="true"
-				android:layout_alignParentTop="true"
+				android:layout_marginRight="20dp"
 				android:layout_marginTop="20dp"
+				android:fitsSystemWindows="false"
 				android:fontFamily="monospace"
 				android:text="customer"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="18sp"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentEnd="true" />
 
 			<TextView
 				android:id="@+id/textView27"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_alignEnd="@+id/textView35"
-				android:layout_alignParentEnd="true"
 				android:layout_alignStart="@+id/textView35"
 				android:layout_below="@+id/textView28"
 				android:layout_marginTop="20dp"
@@ -58,7 +60,8 @@
 				android:text="@string/product"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="18sp"
+				android:layout_alignParentEnd="true" />
 
 			<TextView
 				android:id="@+id/textView37"
@@ -73,24 +76,22 @@
 				android:text="product_id"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="18sp" />
 
 			<EditText
 				android:id="@+id/textView38"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_alignEnd="@+id/textView35"
-				android:layout_alignParentEnd="true"
 				android:layout_alignStart="@+id/textView35"
 				android:layout_below="@+id/textView37"
 				android:layout_marginTop="20dp"
 				android:background="@drawable/edit_text_border2"
 				android:fontFamily="monospace"
-				android:paddingLeft="10dp"
+				android:inputType="number"
 				android:text="qty"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="18sp" />
 
 			<TextView
 				android:id="@+id/textView39"
@@ -105,7 +106,7 @@
 				android:text="daate"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="18sp" />
 
 			<TextView
 				android:id="@+id/textView40"
@@ -120,7 +121,7 @@
 				android:text="rate"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="18sp" />
 
 			<TextView
 				android:id="@+id/textView41"
@@ -135,13 +136,14 @@
 				android:text="mrp"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp" />
+				android:textSize="18sp" />
 
 			<TextView
 				android:id="@+id/textView42"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_alignEnd="@+id/textView35"
+				android:layout_alignParentBottom="true"
 				android:layout_alignParentEnd="true"
 				android:layout_alignStart="@+id/textView35"
 				android:layout_below="@+id/textView41"
@@ -150,8 +152,7 @@
 				android:text="total"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
-				android:textSize="20sp"
-				android:layout_alignParentBottom="true" />
+				android:textSize="18sp" />
 
 			<TextView
 				android:id="@+id/textView15"
@@ -168,24 +169,24 @@
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 
 			<TextView
 				android:id="@+id/textView17"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/textView42"
+				android:layout_alignBottom="@+id/textView42"
+				android:layout_alignEnd="@+id/textView15"
+				android:layout_alignParentStart="true"
 				android:fontFamily="serif-monospace"
 				android:text="Total Rate:"
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
-				android:textStyle="bold"
-				android:layout_alignBaseline="@+id/textView42"
-				android:layout_alignBottom="@+id/textView42"
-				android:layout_alignParentStart="true"
-				android:layout_alignEnd="@+id/textView15" />
+				android:textSize="18sp"
+				android:textStyle="bold" />
 
 			<TextView
 				android:id="@+id/textView16"
@@ -202,7 +203,7 @@
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 
 			<TextView
@@ -220,7 +221,7 @@
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 
 			<TextView
@@ -238,7 +239,7 @@
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 
 			<TextView
@@ -256,7 +257,7 @@
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 
 			<TextView
@@ -273,7 +274,7 @@
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 
 			<TextView
@@ -291,7 +292,7 @@
 				android:textAllCaps="false"
 				android:textAppearance="@style/TextAppearance.AppCompat.Large"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 
 			<TextView
@@ -308,7 +309,7 @@
 				android:text="Product Name:"
 				android:textAllCaps="false"
 				android:textColor="@color/maroonred"
-				android:textSize="20sp"
+				android:textSize="18sp"
 				android:textStyle="bold" />
 		</RelativeLayout>
 	</ScrollView>
@@ -322,7 +323,10 @@
 		android:layout_alignParentEnd="true"
 		android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
 		android:background="@drawable/edit_text_border2"
-		android:text="Close" />
+		android:paddingRight="10dp"
+		android:text="Close"
+		android:textColor="@android:color/holo_red_dark"
+		android:textColorLink="@android:color/holo_red_dark" />
 
 	<Button
 		android:id="@+id/button11"
@@ -334,6 +338,6 @@
 		android:layout_toEndOf="@+id/btn_close_popup2"
 		android:background="@drawable/edit_text_border2"
 		android:text="Save"
-		 />
+		android:textColor="@android:color/holo_red_dark" />
 
 </RelativeLayout>

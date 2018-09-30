@@ -8,11 +8,13 @@
 
 	<ScrollView
 		android:layout_width="match_parent"
-		android:layout_height="match_parent">
+		android:layout_height="match_parent"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true">
 
 		<RelativeLayout
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
+			android:layout_height="match_parent"
 			android:orientation="vertical">
 
 			<RelativeLayout
@@ -20,37 +22,39 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content">
 
-				<TextView
-					android:id="@+id/textView3"
-					style="style/Widget.Material.TextView.ListSeparator"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:background="@android:color/holo_red_dark"
-					android:paddingLeft="20dp"
-					android:text="Information"
-					android:textColor="@android:color/background_light"
-					android:textSize="18sp"
-					android:typeface="monospace" />
+                <TextView
+                    android:id="@+id/textView3"
+                    style="style/Widget.Material.TextView.ListSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_red_dark"
+                    android:paddingLeft="20dp"
+                    android:text="Information"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
 
 				<LinearLayout
 					android:id="@+id/l1"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_alignParentStart="true"
 					android:layout_below="@+id/textView3"
-					android:layout_marginRight="220dp"
+					android:layout_alignTop="@+id/l2"
+					android:layout_alignBottom="@+id/l2"
+					android:layout_alignParentStart="true"
 					android:orientation="vertical"
-					android:paddingBottom="10dp"
 					android:paddingLeft="10dp"
-					android:paddingTop="20dp">
+					android:paddingTop="20dp"
+					android:paddingBottom="10dp">
 
 					<TextView
 						android:id="@+id/textView4"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
 						android:text="Shop Name"
-						android:textSize="12sp"
-						tools:layout_marginBottom="10dp" />
+						android:textSize="12sp" />
 
 					<TextView
 						android:id="@+id/textView22"
@@ -67,19 +71,19 @@
 						android:layout_marginBottom="10dp"
 						android:text="Gst No"
 						android:textSize="12sp" />
+
 				</LinearLayout>
 
 				<LinearLayout
 					android:id="@+id/l2"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:layout_alignParentEnd="true"
+					android:layout_width="262dp"
+					android:layout_height="108dp"
 					android:layout_below="@+id/textView3"
-					android:layout_marginLeft="120dp"
+					android:layout_alignParentEnd="true"
 					android:orientation="vertical"
-					android:paddingBottom="10dp"
+					android:paddingTop="20dp"
 					android:paddingRight="10dp"
-					android:paddingTop="20dp">
+					android:paddingBottom="10dp">
 
 					<TextView
 						android:id="@+id/textView10"
@@ -110,8 +114,8 @@
 				android:id="@+id/relativeLayout2"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_alignParentStart="true"
-				android:layout_below="@+id/relativeLayout1">
+				android:layout_below="@+id/relativeLayout1"
+				android:layout_alignParentStart="true">
 
 				<TextView
 					android:id="@+id/textView26"
@@ -124,20 +128,23 @@
 					android:text="Address Information"
 					android:textColor="@android:color/background_light"
 					android:textSize="18sp"
+					android:textStyle="bold"
 					android:typeface="monospace" />
 
 				<LinearLayout
 					android:id="@+id/l3"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_alignParentStart="true"
-					android:layout_alignStart="@+id/l4"
 					android:layout_below="@+id/textView26"
+					android:layout_alignStart="@+id/l4"
+					android:layout_alignTop="@+id/l4"
+					android:layout_alignBottom="@+id/l4"
+					android:layout_alignParentStart="true"
 					android:layout_marginRight="220dp"
 					android:orientation="vertical"
-					android:paddingBottom="10dp"
 					android:paddingLeft="10dp"
 					android:paddingTop="20dp"
+					android:paddingBottom="10dp"
 					android:weightSum="1.0">
 
 					<TextView
@@ -192,13 +199,13 @@
 					android:id="@+id/l4"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:layout_alignParentEnd="true"
 					android:layout_below="@+id/textView26"
+					android:layout_alignParentEnd="true"
 					android:layout_marginLeft="120dp"
 					android:orientation="vertical"
-					android:paddingBottom="10dp"
-					android:paddingRight="10dp"
 					android:paddingTop="20dp"
+					android:paddingRight="10dp"
+					android:paddingBottom="10dp"
 					android:weightSum="1.0">
 
 					<TextView
@@ -254,8 +261,8 @@
 				android:id="@+id/relativeLayout3"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_alignParentStart="true"
-				android:layout_below="@+id/relativeLayout2">
+				android:layout_below="@+id/relativeLayout2"
+				android:layout_alignParentStart="true">
 
 				<TextView
 					android:id="@+id/textView56"
@@ -270,19 +277,22 @@
 					android:text="Contact Information"
 					android:textColor="@android:color/background_light"
 					android:textSize="18sp"
+					android:textStyle="bold"
 					android:typeface="monospace" />
 
 				<LinearLayout
 					android:id="@+id/l5"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_alignParentStart="true"
 					android:layout_below="@+id/textView56"
+					android:layout_alignTop="@+id/l6"
+					android:layout_alignBottom="@+id/l6"
+					android:layout_alignParentStart="true"
 					android:layout_marginRight="220dp"
 					android:orientation="vertical"
-					android:paddingBottom="10dp"
 					android:paddingLeft="10dp"
 					android:paddingTop="20dp"
+					android:paddingBottom="10dp"
 					android:weightSum="1.0">
 
 					<TextView
@@ -322,13 +332,13 @@
 					android:id="@+id/l6"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:layout_alignParentEnd="true"
 					android:layout_below="@+id/textView56"
+					android:layout_alignParentEnd="true"
 					android:layout_marginLeft="120dp"
 					android:orientation="vertical"
-					android:paddingBottom="10dp"
-					android:paddingRight="10dp"
 					android:paddingTop="20dp"
+					android:paddingRight="10dp"
+					android:paddingBottom="10dp"
 					android:weightSum="1.0">
 
 					<TextView

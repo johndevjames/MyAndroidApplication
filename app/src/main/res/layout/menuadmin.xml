@@ -149,20 +149,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 		tools:layout_editor_absoluteY="136dp" />
 
 
-	<TextView
-		android:id="@+id/textView31"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:layout_alignParentStart="true"
-
-		android:fontFamily="serif-monospace"
-
-		android:textSize="18sp"
-		android:textStyle="bold"
-		tools:layout_editor_absoluteX="8dp"
-		tools:layout_editor_absoluteY="0dp" />
-
 	<ImageView
 		android:id="@+id/imageView3"
 		android:layout_width="match_parent"
@@ -179,10 +165,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 		android:layout_alignParentBottom="true"
 		android:layout_alignParentStart="true"
 
-		android:background="@drawable/bkg1"
+		android:layout_marginBottom="5dp"
 
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:background="@drawable/search_text_border"
 		android:fontFamily="sans-serif"
-		android:paddingLeft="5dp"
+		android:paddingLeft="10dp"
 		android:textAlignment="center"
 		android:textSize="18sp"
 		android:textStyle="bold"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_Menu"
+        android:orderInCategory="100"
+        android:title="Menu"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_view_customer"
+        android:orderInCategory="100"
+        android:title="View Customer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Add_customer"
+        android:orderInCategory="100"
+        android:title="Add Customer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Add_Order"
+        android:orderInCategory="100"
+        android:title="Add Order"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_View_Order"
+        android:orderInCategory="100"
+        android:title="View Order"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/add_user_settings"
+        android:orderInCategory="100"
+        android:title="Add User"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/change_pass_settings"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/signout_settings"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about_version"
+        android:orderInCategory="100"
+        android:title="Version"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about_us"
+        android:orderInCategory="100"
+        android:title="About Us"
+        app:showAsAction="never" />
+</menu>

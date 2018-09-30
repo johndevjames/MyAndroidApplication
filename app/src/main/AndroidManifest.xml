@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.johndevjames.myandroidapplication">
+    package="com.johndevjames.myandroid">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -14,7 +14,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Smart Order"
         android:theme="@style/AppTheme">
-        <activity android:name="com.johndevjames.myandroidapplication.HomeActivity"
+        <activity android:name="com.johndevjames.myandroid.HomeActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -25,82 +25,82 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="View Order"
             android:screenOrientation="portrait"
-            android:name="com.johndevjames.myandroidapplication.Order3"
+            android:name="com.johndevjames.myandroid.Order3"
             android:textColor="@color/apple_grey"/>
-        <activity android:name="com.johndevjames.myandroidapplication.SignUPActivity"/>
-        <activity android:name="com.johndevjames.myandroidapplication.view_orders"
+        <activity android:name="com.johndevjames.myandroid.SignUPActivity"/>
+        <activity android:name="com.johndevjames.myandroid.view_orders"
             android:screenOrientation="portrait" />
-        <activity android:name="com.johndevjames.myandroidapplication.cardview"/>
-        <activity android:name="com.johndevjames.myandroidapplication.login"
+        <activity android:name="com.johndevjames.myandroid.cardview"/>
+        <activity android:name="com.johndevjames.myandroid.login"
             android:screenOrientation="portrait" />
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Items"
             android:screenOrientation="portrait"
-            android:name="com.johndevjames.myandroidapplication.item_activity"/>
+            android:name="com.johndevjames.myandroid.item_activity"/>
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Add New Company"
             android:screenOrientation="portrait"
-            android:name="com.johndevjames.myandroidapplication.addnewcompany"/>
+            android:name="com.johndevjames.myandroid.addnewcompany"/>
         <activity
             android:label="Add Customer"
             android:screenOrientation="portrait"
             android:configChanges="keyboardHidden|orientation|screenSize"
 
-            android:name="com.johndevjames.myandroidapplication.Addcustomer"/>
+            android:name="com.johndevjames.myandroid.Addcustomer"/>
         <activity
             android:label="Add New User"
             android:screenOrientation="portrait"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:name="com.johndevjames.myandroidapplication.Change_username"/>
+            android:name="com.johndevjames.myandroid.Change_username"/>
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Change Password"
             android:screenOrientation="portrait"
-            android:name="com.johndevjames.myandroidapplication.change_password"/>
+            android:name="com.johndevjames.myandroid.change_password"/>
         <activity
 
             android:label="Edit Customer"
             android:screenOrientation="portrait"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:name="com.johndevjames.myandroidapplication.Editcustomer"/>
+            android:name="com.johndevjames.myandroid.Editcustomer"/>
         <activity
-            android:name="com.johndevjames.myandroidapplication.Settings"/>
+            android:name="com.johndevjames.myandroid.Settings"/>
         <activity
             android:label="Smart Order"
-            android:name="com.johndevjames.myandroidapplication.Customer_details"
+            android:name="com.johndevjames.myandroid.Customer_details"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.johndevjames.myandroidapplication.Createdetails"/>
+            android:name="com.johndevjames.myandroid.Createdetails"/>
         <activity
             android:label="Smart Order"
-            android:name="com.johndevjames.myandroidapplication.MenuIconsAdmin"
+            android:name="com.johndevjames.myandroid.MenuIconsAdmin"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:textColor="@color/apple_grey"/>
         <activity
-            android:name="com.johndevjames.myandroidapplication.Testvolley3"/>
+            android:name="com.johndevjames.myandroid.Testvolley3"/>
         <activity
             android:label="View Customer Details"
-            android:name="com.johndevjames.myandroidapplication.Customer_details2"/>
+            android:name="com.johndevjames.myandroid.Customer_details2"/>
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:label="Add Order"
             android:screenOrientation="portrait"
-            android:name="com.johndevjames.myandroidapplication.Order"
-            android:windowSoftInputMode="adjustResize"/>
+
+            android:name="com.johndevjames.myandroid.Order" />
         <activity android:label="View Order"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
-            android:name="com.johndevjames.myandroidapplication.Order2"/>
+            android:name="com.johndevjames.myandroid.Order2"/>
         <activity android:label="Add Order"
             android:screenOrientation="portrait"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:name="com.johndevjames.myandroidapplication.Order_customer"/>
-        <activity android:name="com.johndevjames.myandroidapplication.addImage"/>
-        <activity android:name="com.johndevjames.myandroidapplication.about_us"/>
+            android:name="com.johndevjames.myandroid.Order_customer"/>
+        <activity android:name="com.johndevjames.myandroid.addImage"/>
+        <activity android:name="com.johndevjames.myandroid.about_us"/>
 
 
 

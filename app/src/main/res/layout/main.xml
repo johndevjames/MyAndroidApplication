@@ -30,20 +30,23 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button9"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp" />
+        android:layout_marginTop="113dp"
+        android:contentDescription="TODO" />
 
     <Button
         android:id="@+id/button24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Demo"
-        android:layout_alignTop="@+id/buttonSignIN"
+        android:layout_alignEnd="@+id/buttonSignIN"
         android:layout_alignStart="@+id/buttonSignIN"
-        android:layout_alignEnd="@+id/buttonSignIN" />
+        android:layout_alignTop="@+id/buttonSignIN"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Demo"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
 
 </RelativeLayout>

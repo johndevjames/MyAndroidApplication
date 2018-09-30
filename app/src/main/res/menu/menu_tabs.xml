@@ -2,12 +2,6 @@
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/logo_image"
-        android:icon="@drawable/mnemonic_dp"
-        android:orderInCategory="150"
-        android:title="logo"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/action_Menu"
         android:orderInCategory="100"
         android:title="Menu"
@@ -32,7 +26,7 @@
         android:orderInCategory="100"
         android:title="View Order"
         app:showAsAction="never" />
-    <item
+    <!--<item
         android:id="@+id/add_user_settings"
         android:orderInCategory="100"
         android:title="Add User"
@@ -41,7 +35,7 @@
         android:id="@+id/change_pass_settings"
         android:orderInCategory="100"
         android:title="Change Password"
-        app:showAsAction="never" />
+        app:showAsAction="never" />-->
     <item
         android:id="@+id/signout_settings"
         android:orderInCategory="100"

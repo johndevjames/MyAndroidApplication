@@ -12,6 +12,7 @@
 		android:layout_height="match_parent"
 		android:layout_alignParentEnd="true"
 		android:layout_below="@+id/textView5"
+		android:layout_marginBottom="10dp"
 		android:layout_marginLeft="10dp"
 		android:layout_marginRight="10dp"
 		android:layout_marginTop="25dp"
@@ -33,14 +34,14 @@
 		android:id="@+id/textView5"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/recycler_view"
 		android:layout_below="@+id/toolbar4"
 		android:layout_marginTop="10dp"
 		android:fontFamily="monospace"
 		android:text="Customer Details"
 		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-		android:textColor="@color/apple_black"
-		android:textStyle="bold"
-		android:layout_alignStart="@+id/recycler_view" />
+		android:textColor="@color/cardview_dark_background"
+		android:textStyle="bold" />
 
 	<Button
 		android:id="@+id/button19"
